@@ -83,16 +83,11 @@ def dc ():
                 pygame.quit()
                 sys.exit()
             if pressed1 and b.collidepoint(pos):
-                if (c1 == 1 and c6 ==1 and c2 == 1):
-                    pass
-                    if (c == 1 and c4 == 1 and c7 == 1):
+                if (c1 == 1 and c6 ==1 and c2 == 1) or (c == 1 and c4 == 1 and c7 == 1):
+                        import Level3
                         surface.blit(gameover,gameover1)
-                        
-                        
-                    import Level3
-                    
                 else:
-                    surface.blit(Wrong,gameover1)
+                        surface.blit(Wrong,gameover1)
             if card1.collidepoint(pos) and pressed1:
                 c1 += 1
                 print("Correct")
